@@ -1,0 +1,23 @@
+#!/bin/python3.7
+
+from os import sys
+from steps import step_1, print_Z, step_3
+
+def parser():
+    if (len(sys.argv) != 3):
+        quit (84)
+    try:
+        a = int(sys.argv[1])
+        b = int(sys.argv[2])
+    except:
+        quit(84)
+
+    if (a < 50 or b < 50):
+        quit (84)
+    return a, b
+
+
+a, b = parser()
+x_y_results, z_results = step_1(a, b)
+print_Z(z_results)
+step_3(x_y_results, z_results)
