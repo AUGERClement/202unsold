@@ -1,4 +1,4 @@
-#!/bin/python3.7
+#!/bin/python3
 
 from numpy import var
 
@@ -77,7 +77,7 @@ def print_value(value, i, j):
 
 def print_Z(z_results):
     print("z", end="\t")
-    
+
     for key in z_results.keys():
         print(key, end="\t")
     print("total")

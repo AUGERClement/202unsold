@@ -1,4 +1,4 @@
-#!/bin/python3.7
+#!/bin/python3
 
 from os import sys
 from steps import step_1, print_Z, step_3
